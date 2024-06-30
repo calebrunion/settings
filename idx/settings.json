@@ -1,0 +1,20 @@
+{
+  "http.proxySupport": "off",
+  "terminal.integrated.localEchoLatencyThreshold": -1,
+  "terminal.integrated.localEchoEnabled": "off",
+  "workbench.editor.showTabs": false,
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "Default Dark Modern",
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "editor.fontLigatures": true,
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+  "editor.fontSize": 14,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorWidth": 3
+}
