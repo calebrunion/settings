@@ -34,7 +34,7 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.find.addExtraSpaceOnTop": false,
-  "editor.fontLigatures": true,
+  // "editor.fontLigatures": true,
   "editor.glyphMargin": false,
   "editor.guides.bracketPairs": "active",
   "editor.hideCursorInOverviewRuler": true,
@@ -42,7 +42,7 @@
   "editor.inlineSuggest.enabled": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.parameterHints.enabled": false,
-  "editor.renderWhitespace": "boundary",
+  "editor.renderWhitespace": "none",
   "editor.scrollBeyondLastColumn": 10,
   "editor.smoothScrolling": true,
   "editor.snippetSuggestions": "none",
@@ -135,7 +135,6 @@
     }
   },
   "explorer.autoReveal": false,
-  "files.autoSave": "onFocusChange",
   "files.exclude": {
     "**/.cache": true,
     "**/.next": true,
@@ -155,6 +154,10 @@
     {
       "user.email": "calebrunion@icloud.com",
       "user.name": "Caleb Runion"
+    },
+    {
+      "user.email": "crunion@gloo.us",
+      "user.name": "Cal Runion"
     }
   ],
   "git-autoconfig.ignoreRootList": [
@@ -167,9 +170,11 @@
     "/workspaces/expo-hello-world",
     "/home/dev/devcontainers-try-bun",
     "/Users/caleb/Projects/myworld-clean",
-    "/Users/dev/Projects/supabase-test"
+    "/Users/dev/Projects/supabase-test",
+    "/workspaces/next-supabase",
+    "/workspaces/gloo-ai-studio",
+    "/workspaces/corporate-website-api"
   ],
-  "git-graph.dialog.resetCurrentBranchToCommit.mode": "Soft",
   "git-graph.keyboardShortcut.scrollToStash": "CTRL/CMD + N",
   "git-graph.repository.onlyFollowFirstParent": true,
   "git-graph.showStatusBarItem": false,
@@ -189,7 +194,7 @@
   "html.format.preserveNewLines": false,
   "html.format.unformatted": "br, block",
   "html.format.wrapLineLength": 0,
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  // "javascript.updateImportsOnFileMove.enabled": "always",
   "livePreview.autoRefreshPreview": "On Changes to Saved Files",
   "livePreview.debugOnExternalPreview": true,
   "livePreview.showServerStatusNotifications": false,
@@ -204,34 +209,37 @@
     "191.234.165.198": "linux",
     "192.168.1.118": "linux",
     "Azure": "linux",
-    "devRunion": "linux",
+    "devRunion": "macOS",
     "devrunion.local": "macOS",
     "devRunion.local": "macOS",
     "NUC": "linux",
     "NUC.local": "linux",
-    "PowerPro": "macOS",
+    "PowerPro": "linux",
     "Host": "macOS",
     "WAC": "macOS",
-    "MBP": "macOS"
+    "MBP": "macOS",
+    "Mac": "macOS",
+    "WSL": "linux",
+    "calebrunion-himalayas.nord": "macOS"
   },
   "remote.tunnels.access.preventSleep": true,
   "remote.tunnels.alwaysUpdateCLI": true,
   "scss.lint.float": "warning",
   "security.workspace.trust.untrustedFiles": "open",
   "settingsSync.ignoredExtensions": [
-    "shyykoserhiy.git-autoconfig",
-    "gruntfuggly.todo-tree",
-    "burkeholland.simple-react-snippets",
-    "codeandstuff.package-json-upgrade",
     "ankitbko.vscode-pull-request-azdo",
-    "snyk-security.snyk-vulnerability-scanner",
     "github.heygithub",
     "oderwat.indent-rainbow",
-    "ms-azuretools.vscode-docker",
     "ms-vscode.vscode-speech"
   ],
   "settingsSync.ignoredSettings": [],
-  "snyk.trustedFolders": ["/Users/caleb.runion/Dev/oam", "/home/dev/myworld"],
+  "snyk.trustedFolders": [
+    "/Users/caleb.runion/Dev/oam",
+    "/home/dev/myworld",
+    "/Users/calebrunion/Projects/myworld-spa",
+    "/Users/calebrunion/Projects/olap-spa",
+    "/Users/calebrunion/Projects/portfolio"
+  ],
   "snyk.yesWelcomeNotification": false,
   "svg.completion.emmet": true,
   "tailwindCSS.emmetCompletions": true,
@@ -252,11 +260,10 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.newWindowDimensions": "inherit",
   "workbench.colorCustomizations": {
-    // "editor.background": "#111",
     // "editor.findMatchBackground": "#135564",
-    // "editor.selectionBackground": "#135564"
+    // "editor.selectionBackground": "#135564",
+    "git.blame.editorDecorationForeground": "#cccccc40"
   },
-  "workbench.editor.wrapTabs": true,
   "workbench.editorAssociations": {
     "*.dae": "default",
     "*.fla": "default",
@@ -266,36 +273,89 @@
   "workbench.list.smoothScrolling": true,
   "workbench.startupEditor": "none",
   "redhat.telemetry.enabled": false,
-  "workbench.activityBar.location": "top",
   "githubPullRequests.createOnPublishBranch": "never",
   "git.ignoreMissingGitWarning": true,
   "editor.formatOnType": true,
   "zenMode.showTabs": "none",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "workbench.editor.pinnedTabsOnSeparateRow": true,
-  "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "githubPullRequests.pullBranch": "never",
   "diffEditor.useInlineViewWhenSpaceIsLimited": false,
   "diffEditor.renderSideBySide": true,
-  "window.customTitleBarVisibility": "auto",
-  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "window.autoDetectColorScheme": true,
-  "github.copilot.editor.enableAutoCompletions": true,
-  "snyk.advanced.cliPath": "C:\\Users\\3y48fe\\AppData\\Local\\snyk-ls\\snyk-win.exe",
+  "github.copilot.editor.enableAutoCompletions": false,
   "git-graph.repository.commits.showSignatureStatus": true,
   "editor.fontSize": 15,
-  "workbench.editor.showTabs": "none",
-  "window.menuBarVisibility": "toggle",
+  "window.menuBarVisibility": "hidden",
   "extensions.ignoreRecommendations": true,
-  "window.nativeTabs": true,
   "window.titleBarStyle": "custom",
   "vscode-edge-devtools.webhintInstallNotification": true,
-  "snyk.folderConfigs": null,
-  "projectManager.git.baseFolders": ["~/Projects"],
   "editor.mouseWheelScrollSensitivity": 1.5,
   "terminal.integrated.smoothScrolling": true,
-  "cSpell.userWords": ["tailwindcss", "webp"],
+  "cSpell.userWords": [
+    "fieldset",
+    "Gloo",
+    "Gloos",
+    "networkidle",
+    "posthog",
+    "tailwindcss",
+    "webp"
+  ],
   "remote.tunnels.access.hostNameOverride": "devRunion",
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.scrollToSwitchTabs": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "workbench.statusBar.visible": false,
+  "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+  "workbench.preferredLightColorTheme": "Default Dark Modern",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "chat.agent.enabled": true,
+  "gitlens.advanced.messages": {
+    "suppressIntegrationDisconnectedTooManyFailedRequestsWarning": true
+  },
+  "git-graph.dialog.fetchRemote.pruneTags": true,
+  "git-graph.dialog.fetchRemote.prune": true,
+  "git.pruneOnFetch": true,
+  "git-graph.repository.fetchAndPrune": true,
+  "git-graph.repository.commits.fetchAvatars": true,
+  "git-graph.dialog.fetchIntoLocalBranch.forceFetch": true,
+  "git-graph.repository.sign.commits": true,
+  "git-graph.repository.sign.tags": true,
+  "github.copilot.nextEditSuggestions.fixes": true,
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "file": ".copilot-codeGeneration-instructions.md"
+    }
+  ],
+  "window.nativeTabs": true,
+  "github.copilot.chat.codesearch.enabled": true,
+  "workbench.editor.wrapTabs": true,
+  "git.pullBeforeCheckout": true,
+  "git-graph.dialog.addTag.pushToRemote": true,
+  "git-graph.dialog.createBranch.checkOut": true,
+  "workbench.editor.enablePreview": false,
+  "git-graph.dialog.rebase.launchInteractiveRebase": true,
+  "workbench.editor.showTabs": "none",
+  "chat.mcp.serverSampling": {
+    "Global in Code: figma": {
+      "allowedModels": [
+        "github.copilot-chat/claude-sonnet-4",
+        "github.copilot-chat/gpt-4.1"
+      ]
+    }
+  },
+  "git.blame.editorDecoration.enabled": true,
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "chat.agent.maxRequests": 1000,
+  "window.commandCenter": false,
+  "chat.commandCenter.enabled": false,
+  "workbench.activityBar.location": "bottom",
+  "window.customTitleBarVisibility": "never"
 }
